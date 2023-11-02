@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prueba javascript</title>
+
+    <script>
+        function login() {
+            nombre = document.getElementById("inputusuario").value;            
+            contraseña = document.getElementById("inputcontraseña").value;
+
+            if (nombre=="ballena" && contraseña == "pepe") {
+                alert("hola ballena");     
+                window.location.href = "prueba.html";       
+            }
+            else{
+                alert("usuario i/o contraseña son incorrectos");
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+        <label for="inputusuario">Usuario</label>
+        <input type="text" id="inputusuario"> <br>
+        <label for="inputcontraseña" >Contraseña</label>
+        <input type="password" id="inputcontraseña"> <br> 
+        <input type="button" onclick="login()" value="Entrar">
+
+    </form>
+</body>
+</html>
